@@ -1,0 +1,112 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/rounded_dialog">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        >
+
+        <EditText
+            android:id="@+id/teacherName"
+            android:hint="@string/full_name"
+            android:autofillHints="name"
+            style="@style/add_teacher_field"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/teacherEmail"
+            android:autofillHints="emailAddress"
+            android:hint="@string/email"
+            style="@style/add_teacher_field"
+            android:inputType="textEmailAddress"
+            />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            >
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="@string/male"
+                android:layout_marginEnd="20dp"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:text="@string/female"
+                android:layout_height="50dp"
+                android:layout_width="130dp"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="@string/choose_subject"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+
+            />
+        <Spinner
+            android:id="@+id/subjectSpinner"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/select_the_classes"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            android:textSize="20sp"
+            android:layout_marginStart="3dp"
+            />
+         <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    android:background="@drawable/rounded_dialog"
+    >
+        <LinearLayout
+            android:id="@+id/classCheckboxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            />
+</ScrollView>
+
+        <Button
+            android:id="@+id/addtech"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_teacherfr"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#1C3557"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/rounded_dialog" >
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:id="@+id/inputSubjectName"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="name"
+        android:hint="@string/subject_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_days_per_week_to_take_it"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif"/>
+    <NumberPicker
+        android:id="@+id/inputSubjectHours"
+        android:layout_width="125dp"
+        android:layout_height="91dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+    />
+
+
+    <TextView
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_an_icon"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"/>
+
+    <GridLayout
+        android:id="@+id/iconPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        >
+
+    <ImageView
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/book_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/english_icon"
+            android:tag="english_icon"
+            android:layout_margin="5dp"
+        />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/internet_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/globe_book"
+            android:tag="globe_book"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/laptop_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/laptop_chromebook"
+            android:tag="laptop_chromebook"
+            android:layout_margin="5dp"
+         />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/chemistry_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/chemistry_icon"
+            android:tag="chemistry_icon"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/physics_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/physics_icon"
+            android:tag="physics_icon"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/math_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/mathematics_icon"
+            android:tag="mathematics_icon"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/subject_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/default_icon"
+            android:tag="default_icon"
+            android:layout_margin="5dp"
+            />
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:contentDescription="@string/language_icon"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/ticon"
+            android:tag="ticon"
+            android:layout_margin="5dp"
+            />
+    </GridLayout>
+
+    <TextView
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_the_linke_of_the_book"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"/>
+
+    <EditText
+        android:id="@+id/bookLin"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="name"
+        android:hint="@string/book_link"
+        android:inputType="text"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/addSub"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_subject"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1C3557"
+        android:textColor="@android:color/white" />
+</LinearLayout>

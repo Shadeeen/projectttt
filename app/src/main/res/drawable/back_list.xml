@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Background color (white or soft white) -->
+    <solid android:color="#E9E9F4" /> <!-- softer than pure white -->
+
+    <!-- Rounded corners -->
+    <corners android:radius="12dp"
+        />
+
+    <!-- Optional border -->
+    <stroke
+        android:width="2dp"
+        android:color="#9898B6"
+        />
+
+</shape>

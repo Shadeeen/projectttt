@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_dialog"
+    >
+
+    <TextView
+        android:id="@+id/dialogTeacherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher_name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="serif"/>
+
+    <TextView
+        android:id="@+id/dialogTeacherEmail"
+        android:text="@string/emaill"
+        style="@style/teacher_details_fields" />
+
+    <TextView
+        android:id="@+id/dialogTeacherGender"
+        android:text="@string/gender"
+        style="@style/teacher_details_fields" />
+
+    <TextView
+        android:id="@+id/dialogTeacherSubject"
+        android:text="@string/subjectt"
+        style="@style/teacher_details_fields" />
+
+    <TextView
+        android:id="@+id/dialogTeacherClass"
+        android:text="@string/the_classes_that_teach"
+        style="@style/teacher_details_fields" />
+    <Button
+        android:id="@+id/deleteTeach"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_teacher"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#1C3557"
+        android:textColor="@android:color/white"
+        />
+</LinearLayout>

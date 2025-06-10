@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/nav_teachers"
+        android:icon="@drawable/teacher"
+        android:title="@string/teacher"
+        />
+
+    <item
+        android:id="@+id/nav_subjects"
+        android:icon="@drawable/subject"
+        android:title="@string/subject" />
+    <item
+        android:id="@+id/nav_classes"
+        android:icon="@drawable/classes"
+        android:title="@string/classe" />
+
+
+</menu>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scheduleFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/scheduleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/scheduleTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2,3,4,5"
+            android:background="@android:color/white">
+
+
+        <TableRow>
+                <TextView android:text="@string/time_day" style="@style/text_view_scheduale_table"  />
+                <TextView android:text="@string/mon" style="@style/text_view_scheduale_table" />
+                <TextView android:text="@string/tue" style="@style/text_view_scheduale_table" />
+                <TextView android:text="@string/wed" style="@style/text_view_scheduale_table"/>
+                <TextView android:text="@string/thu" style="@style/text_view_scheduale_table" />
+                <TextView android:text="@string/sat" style="@style/text_view_scheduale_table" />
+            </TableRow>
+
+
+            <TableRow  android:background="@drawable/table_row">
+
+                <TextView android:text="@string/_08_00_08_40" style="@style/text_view_scheduale_table"/>
+                <TextView
+                    android:id="@+id/mon_0"
+                    style="@style/row_style" />
+                <TextView
+                    android:id="@+id/tue_0"
+                    style="@style/row_style" />
+                <TextView
+                    android:id="@+id/wed_0"
+                    style="@style/row_style" />
+                <TextView
+                    android:id="@+id/thu_0"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/sat_0"
+                    style="@style/row_style"/>
+            </TableRow>
+
+            <TableRow  android:background="@drawable/table_row">
+                <TextView android:text="@string/_08_45_09_25" style="@style/text_view_scheduale_table" />
+                <TextView
+                    android:id="@+id/mon_1"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/tue_1"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/wed_1"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/thu_1"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/sat_1"
+                    style="@style/row_style"/>
+            </TableRow>
+
+            <TableRow     android:background="@drawable/table_row">
+                <TextView android:text="@string/_09_30_10_10" style="@style/text_view_scheduale_table"/>
+                <TextView
+                    android:id="@+id/mon_2"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/tue_2"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/wed_2"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/thu_2"
+                    style="@style/row_style"/>
+                <TextView
+                    android:id="@+id/sat_2"
+                    style="@style/row_style"/>
+            </TableRow>
+
+            <TableRow android:background="@drawable/table_row">
+                <TextView android:text="@string/_10_15_10_55" style="@style/text_view_scheduale_table" />
+                <TextView android:id="@+id/mon_3"   style="@style/row_style" />
+                <TextView android:id="@+id/tue_3"   style="@style/row_style"/>
+                <TextView android:id="@+id/wed_3"  style="@style/row_style" />
+                <TextView android:id="@+id/thu_3"  style="@style/row_style"/>
+                <TextView android:id="@+id/sat_3"   style="@style/row_style"/>
+            </TableRow>
+
+            <TableRow   android:background="@drawable/table_row">
+                <TextView android:text="@string/_11_00_11_40" style="@style/text_view_scheduale_table"/>
+                <TextView android:id="@+id/mon_4"   style="@style/row_style" />
+                <TextView android:id="@+id/tue_4"   style="@style/row_style" />
+                <TextView android:id="@+id/wed_4"   style="@style/row_style" />
+                <TextView android:id="@+id/thu_4"   style="@style/row_style"/>
+                <TextView android:id="@+id/sat_4"   style="@style/row_style"/>
+            </TableRow>
+
+            <TableRow   android:background="@drawable/table_row">
+                <TextView android:text="@string/_11_45_12_25" style="@style/text_view_scheduale_table" />
+                <TextView android:id="@+id/mon_5"   style="@style/row_style" />
+                <TextView android:id="@+id/tue_5"   style="@style/row_style" />
+                <TextView android:id="@+id/wed_5"  style="@style/row_style" />
+                <TextView android:id="@+id/thu_5"   style="@style/row_style" />
+                <TextView android:id="@+id/sat_5"   style="@style/row_style" />
+            </TableRow>
+
+            <!-- Row 7 -->
+            <TableRow   android:background="@drawable/table_row">
+                <TextView android:text="@string/_12_30_13_10" style="@style/text_view_scheduale_table"  />
+                <TextView android:id="@+id/mon_6"   style="@style/row_style" />
+                <TextView android:id="@+id/tue_6"   style="@style/row_style" />
+                <TextView android:id="@+id/wed_6"   style="@style/row_style" />
+                <TextView android:id="@+id/thu_6"   style="@style/row_style"/>
+                <TextView android:id="@+id/sat_6"   style="@style/row_style" />
+            </TableRow>
+
+            <!-- Row 8 -->
+            <TableRow  android:background="@drawable/table_row">
+                <TextView android:text="@string/_13_15_13_55" style="@style/text_view_scheduale_table" />
+                <TextView android:id="@+id/mon_7"   style="@style/row_style" />
+                <TextView android:id="@+id/tue_7"   style="@style/row_style" />
+                <TextView android:id="@+id/wed_7"   style="@style/row_style" />
+                <TextView android:id="@+id/thu_7"   style="@style/row_style" />
+                <TextView android:id="@+id/sat_7"   style="@style/row_style" />
+            </TableRow>
+
+        </TableLayout>
+
+            <!-- Space -->
+            <View android:layout_height="24dp" android:layout_width="match_parent" />
+
+            <!-- Teacher-Subject-Class Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assigned_teachers_subjects"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/teacherSubjectList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Space -->
+            <View android:layout_height="10dp" android:layout_width="match_parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

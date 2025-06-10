@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8FD">
+
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="serif"
+        android:text="@string/your_subjects"
+        android:textColor="#052659"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/subjectsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#052659"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>
