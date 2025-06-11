@@ -6,6 +6,6 @@
         <color name="subject_background">#E3F2FD</color>
         <color name="secondary_text">#757575</color>
         <color name="schedule_border">#E0E0E0</color>
-
+    <color name="headerBackground">#3F51B5</color>
 </resources>
 

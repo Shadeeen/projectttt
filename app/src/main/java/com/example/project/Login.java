@@ -64,7 +64,7 @@ public class Login extends AppCompatActivity {
                                  intent= new Intent(this, MainActivityStudent.class);
                             }
                            else if(role.equals("teacher")){
-                               // intent= new Intent(this, MainActivityTeacher.class);
+                                intent= new Intent(this, MainActivityTeacher.class);
                             }
                            else {
                                 intent= new Intent(this, MainActivity.class);

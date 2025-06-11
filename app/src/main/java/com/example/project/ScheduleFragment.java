@@ -42,14 +42,17 @@ public class ScheduleFragment extends Fragment {
     private TextView[][] scheduleSlots;
     private String[] days = {"mon", "tue", "wed", "thu", "sat"};
     private int totalTimeSlots = 8;
-
+TextView className;
+String clName;
     public ScheduleFragment() {
     }
 
-    public static ScheduleFragment newInstance(int classId) {
+    public static ScheduleFragment newInstance(int classId,String className) {
         ScheduleFragment fragment = new ScheduleFragment();
         Bundle args = new Bundle();
         args.putInt("class_id", classId);
+        args.putString("class_name", className);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -59,6 +62,7 @@ public class ScheduleFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             classId = getArguments().getInt("class_id");
+            clName= getArguments().getString("class_name");
         }
         requestQueue = Volley.newRequestQueue(getContext());
     }
@@ -67,7 +71,8 @@ public class ScheduleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_schedule, container, false);
-
+        className=view.findViewById(R.id.classSchName);
+        className.setText(clName+" Schedule");
         initializeViews(view);
         initializeScheduleSlots(view);
         loadScheduleData();

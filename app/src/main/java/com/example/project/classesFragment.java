@@ -101,7 +101,7 @@ public class classesFragment extends Fragment implements OnClassActionListener {
 
     @Override
     public void onScheduleClick(int classId, String className) {
-        ScheduleFragment scheduleFragment = ScheduleFragment.newInstance(classId);
+        ScheduleFragment scheduleFragment = ScheduleFragment.newInstance(classId,className);
 
         FragmentTransaction ft = getParentFragmentManager().beginTransaction();
         ft.replace(R.id.container, scheduleFragment);

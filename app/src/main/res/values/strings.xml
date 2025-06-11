@@ -122,6 +122,14 @@
     <string name="add_the_linke_of_the_book">add the linke of the Book</string>
     <string name="book_lint">book lint</string>
     <string name="book_link">book link</string>
+    <string name="class_schedule">Class Schedule</string>
+    <string name="attendance">Attendance</string>
+    <string name="assignmentss">Assignments</string>
+    <string name="class_list">Class List</string>
+    <string name="admin">Admin</string>
+    <string name="logouttt">Logout</string>
+    <string name="submit_marks">Submit Marks</string>
+    <string name="student_name">Student Name</string>
 
     <string-array name="week_days">
         <item>Sunday</item>

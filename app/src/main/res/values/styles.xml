@@ -81,4 +81,45 @@
         <item name="android:fontFamily">serif</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    <!-- Card container style for dashboard items -->
+    <style name="DashboardCard1">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/dashboard_card_bg</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Icon style inside dashboard card -->
+    <style name="DashboardIcon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- Label (text) style inside dashboard card -->
+    <style name="DashboardLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="CellHeader">
+        <item name="android:background">#052659</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CellData">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#052659</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textStyle">bold</item>
+        </style>
 </resources>
